@@ -1,13 +1,15 @@
-$color-accent: #1976d2;
+$color-accent: #ee0000;
 //$color-accent: #330000;
 $back-container-background: #fcfcfc;
 $front-container-background: #ffffff;
 
-$default-font-list: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-$mono-font-list: "Fira Mono", "Cousine", Monaco, Menlo, "Source Code Pro",
+$default-font-list: -apple-system,BlinkMacSystemFont,"Red Hat Text","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$mono-font-list: Consolas, Monaco, Menlo, "Source Code Pro",
   monospace;
 //$sans-preferred-font-list: "Montserrat", "Roboto", "Source Sans Pro", "Helvetica", $default-font-list;
-$sans-preferred-font-list: $default-font-list;
+//$sans-preferred-font-list: $default-font-list;
+$sans-preferred-font-list: "Red Hat Display", $default-font-list;
+$nav-title-preferred-font-list: "Red Hat Display", "UD Digi Kyokasho NK-R", "YuKyokasho Yoko", $default-font-list;
 
 $side-container-width: 25%; //280px;
 $extra-container-width: 25%;
@@ -17,7 +19,7 @@ $stream-container-max-width: 1620px;
 $nav-title-size: 30px;
 $nav-subtitle-size: 18px;
 $nav-link-size: 20px;
-$nav-footer-size: 12px;
+$nav-footer-size: 14px;
 $post-title-size: 30px;
 $post-subtitle-size: 14px;
 $post-summary-size: 16px;
@@ -437,6 +439,7 @@ a {
     transition: all 0.2s linear;
     color: $deep-dark-accent;
     .nav-title {
+      font-family: $nav-title-preferred-font-list;
       font-size: $nav-title-size;
       line-height: $nav-title-size * 1.4;
     }
